@@ -9,11 +9,12 @@ public:
     Eksemplar();
     Eksemplar(int id,Bog OM);
 
-    Bog OM() const;
+
+    Bog book() const;
 
 protected:
     int _id;
-    Bog _OM;
+    Bog _book;
 };
 
 #endif // EKSEMPLAR_H

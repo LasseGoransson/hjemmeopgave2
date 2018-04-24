@@ -1,4 +1,5 @@
 #include "bibliotek.h"
+#include <iostream>
 
 Bibliotek::Bibliotek()
 {
@@ -23,7 +24,7 @@ int Bibliotek::tjekOmBogErTilgaengelig(const string& title)
 
     for (int i=0;i<vecSize_eks;i++)
     {
-        if (_eksVec[i].OM().navn() == title)
+        if (_eksVec[i].book().navn() == title)
         {
             matches_eks.push_back(i);
         }
@@ -37,7 +38,7 @@ int Bibliotek::tjekOmBogErTilgaengelig(const string& title)
 
     for (int i=0;i<vecSize_udl;i++)
     {
-        if (_udlVec[i].eks().OM().navn() == title)
+        if (_udlVec[i].eks().book().navn() == title)
         {
             matches_udl.push_back(i);
         }
@@ -80,7 +81,19 @@ int Bibliotek::tjekOmBogErTilgaengelig(const string& title)
 
 }
 
-void Bibliotek::listLaanersLaan(const string &)
+void Bibliotek::listLaanersLaan(const string& navn)
 {
+
+    int vecSize = _udlVec.size();
+    cout << navn << endl;
+    for (int i=0;i<vecSize;i++)
+    {
+        if (_udlVec[i].lender().getName() == navn)
+        {
+            cout << _udlVec[i].eks().book().navn() << endl;
+        }
+    }
+
+
 
 }

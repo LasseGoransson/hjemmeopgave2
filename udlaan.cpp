@@ -25,3 +25,8 @@ dato Udlaan::returnDate() const
 {
     return _returnDate;
 }
+
+Laaner Udlaan::lender() const
+{
+    return _lender;
+}

@@ -14,6 +14,8 @@ public:
 
     dato returnDate() const;
 
+    Laaner lender() const;
+
 protected:
     dato _lendDate;
     dato _returnDate;

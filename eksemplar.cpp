@@ -8,10 +8,11 @@ Eksemplar::Eksemplar()
 Eksemplar::Eksemplar(int id, Bog OM)
 {
  _id = id;
- _OM = OM;
+ _book = OM;
 }
 
-Bog Eksemplar::OM() const
+Bog Eksemplar::book() const
 {
-    return _OM;
+    return _book;
 }
+

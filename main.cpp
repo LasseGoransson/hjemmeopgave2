@@ -47,5 +47,7 @@ bib.tilfoejUdl(udl5);
 
 cout << bib.tjekOmBogErTilgaengelig("The Fellowship of the Ring") << endl;
 
+bib.listLaanersLaan("Petrine Ottesen");
+
 
 }
