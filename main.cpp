@@ -40,7 +40,7 @@ bib.tilfoejUdl(udl1);
 bib.tilfoejUdl(udl2);
 bib.tilfoejUdl(udl3);
 Laaner te(  "Torsten Eriksen", 101);
-Udlaan udl4(dato(20181018), te, eks4);
+Udlaan udl4(dato(20181019), te, eks4);
 Udlaan udl5(dato(20181018), te, eks6);
 bib.tilfoejUdl(udl4);
 bib.tilfoejUdl(udl5);
